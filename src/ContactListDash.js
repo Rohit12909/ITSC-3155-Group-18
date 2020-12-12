@@ -42,14 +42,15 @@ class ContactListDash extends Component {
  
     render() {
         return (
+        
            <div style={{marginTop: "100px"}}>
                <div style={{float: "right"}}>
-               <button className="btn btn-primary" onClick={this.logout}>Logout</button>
+               <button className="btn btn-warning" onClick={this.logout}>Logout</button>
                </div>
                <h2 className="text-center">Contact List</h2>
  
                <div className = "row" style={{marginBottom: "25px"}}>
-                   <button className="btn btn-primary" onClick={this.addContact}>Add Contact</button>
+                   <button className="btn btn-success" onClick={this.addContact}>Add Contact</button>
                </div>
  
                <div className="row">
@@ -74,7 +75,7 @@ class ContactListDash extends Component {
                                        <td>{contact.phoneNumber}</td>
                                        <td>{contact.email}</td>
                                        <td>
-                                           <button onClick={() => this.updateContact(contact.id)} className="btn btn-info" style={{marginLeft: "15px"}}>
+                                           <button onClick={() => this.updateContact(contact.id)} className="btn btn-primary" style={{marginLeft: "15px"}}>
                                                Update
                                            </button>
                                            <button onClick={() => this.deleteContact(contact.id)} className="btn btn-danger" style={{marginLeft: "15px"}}>
@@ -88,6 +89,7 @@ class ContactListDash extends Component {
                    </table>
                </div> 
             </div>
+            
         )
     }
 }

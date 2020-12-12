@@ -49,3 +49,11 @@
   font-weight: bold;
   color: white;
 }
+
+.main{
+  background-color: lightslategray;
+}
+
+.container{
+  height: 800px;
+}

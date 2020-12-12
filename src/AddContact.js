@@ -61,7 +61,7 @@ class AddContact extends Component {
                   
                         <div className = "card col-md-6 offset-md-3 offset-md-3">
                         <div style={{marginTop: "25px"}}>
-               <button className="btn btn-primary" onClick={this.logout} style={{float: "right"}} >Logout</button>
+               <button className="btn btn-warning" onClick={this.logout} style={{float: "right"}} >Logout</button>
                </div>
                             <h3 className = "text-center">Add Contact</h3>
                             <div className = "card-body">
@@ -79,7 +79,7 @@ class AddContact extends Component {
                                         <input placeholder="Email" name="email" className="form-control" value={this.state.email} onChange={this.changeEmailHandler}/>
                                     </div>
  
-                                    <button className="btn btn-success" onClick={this.saveContact}>Save</button>
+                                    <button className="btn btn-primary" onClick={this.saveContact}>Save</button>
                                     <button className="btn btn-danger" onClick={this.cancel} style={{marginLeft: "10px"}}>Cancel</button>
                                 </form>
                             </div>

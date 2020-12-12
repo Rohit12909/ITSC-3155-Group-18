@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Router>
-        
+        <div className="main">
           <Navbar/>
             <div className="container">
               <Switch>
@@ -26,7 +26,7 @@ function App() {
               </Switch>
             </div>
           <Footer/>
-      
+          </div>
       </Router>
     </div>
   );
